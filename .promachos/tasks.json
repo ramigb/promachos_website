@@ -31,9 +31,15 @@
       "priority": "high"
     },
     {
+      "id": "logo_integration",
+      "title": "Integrate official Promachos logo into website design",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
       "id": "final_testing",
       "title": "Test website functionality and responsiveness",
-      "status": "pending",
+      "status": "completed",
       "priority": "medium"
     }
   ]
