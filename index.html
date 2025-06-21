@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promachos - LLM Prompting Framework</title>
+    <meta name="description" content="An advanced LLM prompting framework for structured human-AI collaboration">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Promachos</h1>
+                <span class="tagline">Protocol</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#getting-started">Get Started</a>
+                <a href="#docs">Docs</a>
+                <a href="https://github.com/ramigb/promachos" target="_blank" class="github-link">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        The Future of 
+                        <span class="gradient-text">Human-AI Collaboration</span>
+                    </h2>
+                    <p class="hero-description">
+                        Promachos Protocol establishes standardized, trackable, and scalable collaboration patterns between humans and AI assistants. No more inconsistent AI behavior or lost context.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#getting-started" class="btn btn-primary">Get Started</a>
+                        <a href="https://github.com/ramigb/promachos" target="_blank" class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="protocol-diagram">
+                        <div class="protocol-box human">
+                            <span>Human</span>
+                        </div>
+                        <div class="protocol-arrow">↔</div>
+                        <div class="protocol-box protocol">
+                            <span>Promachos<br>Protocol</span>
+                        </div>
+                        <div class="protocol-arrow">↔</div>
+                        <div class="protocol-box ai">
+                            <span>AI Assistant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Promachos Protocol?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Consistent AI Behavior</h3>
+                        <p>Standardized collaboration rules ensure AI assistants behave predictably across different tools and sessions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Quantified collaboration metrics and progress tracking help teams understand project advancement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Seamless Handoffs</h3>
+                        <p>Context preservation between sessions and team members eliminates information loss during transitions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h3>Enterprise Ready</h3>
+                        <p>Governance, compliance, and audit trails make it suitable for organizational deployment.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Multi-AI Support</h3>
+                        <p>Works with Claude, GPT, Copilot, Cursor, and any AI assistant through auto-discovery.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📁</div>
+                        <h3>Universal Framework</h3>
+                        <p>Adaptable to any codebase, language, or project type with minimal configuration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="getting-started">
+            <div class="container">
+                <h2 class="section-title">Get Started in Minutes</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Install Promachos</h3>
+                            <div class="code-block">
+                                <code>npm install -g promachos</code>
+                                <button class="copy-btn" onclick="copyToClipboard('npm install -g promachos')">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Initialize Your Project</h3>
+                            <div class="code-block">
+                                <code>cd your-project && promachos init --auto</code>
+                                <button class="copy-btn" onclick="copyToClipboard('cd your-project && promachos init --auto')">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Start Collaborating</h3>
+                            <div class="code-block">
+                                <code>promachos start --copy</code>
+                                <button class="copy-btn" onclick="copyToClipboard('promachos start --copy')">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protocol Structure -->
+        <section class="protocol-structure">
+            <div class="container">
+                <h2 class="section-title">Protocol Structure</h2>
+                <div class="structure-visual">
+                    <div class="file-tree">
+                        <div class="file-item folder">
+                            <span>.promachos/</span>
+                        </div>
+                        <div class="file-item file indent-1">
+                            <span>config.yaml</span>
+                            <small>AI behavior rules & preferences</small>
+                        </div>
+                        <div class="file-item file indent-1">
+                            <span>project.md</span>
+                            <small>Structured project context</small>
+                        </div>
+                        <div class="file-item file indent-1">
+                            <span>context.md</span>
+                            <small>Decision history & insights</small>
+                        </div>
+                        <div class="file-item file indent-1">
+                            <span>progress.json</span>
+                            <small>Quantified progress metrics</small>
+                        </div>
+                        <div class="file-item file indent-1">
+                            <span>tasks.json</span>
+                            <small>Structured task breakdown</small>
+                        </div>
+                        <div class="file-item folder indent-1">
+                            <span>artifacts/</span>
+                            <small>AI-generated outputs</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="docs" class="documentation">
+            <div class="container">
+                <h2 class="section-title">Documentation</h2>
+                
+                <div class="docs-grid">
+                    <!-- Overview -->
+                    <div class="docs-section">
+                        <h3>📖 Overview</h3>
+                        <p>Promachos Protocol establishes a standardized framework for human-AI collaboration, ensuring consistent behavior across different AI tools and sessions.</p>
+                        <div class="docs-content">
+                            <h4>What is Promachos Protocol?</h4>
+                            <ul>
+                                <li>A structured approach to AI collaboration</li>
+                                <li>Standardized file format for project context</li>
+                                <li>Progress tracking and session continuity</li>
+                                <li>Multi-AI assistant compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Installation -->
+                    <div class="docs-section">
+                        <h3>⚡ Quick Start</h3>
+                        <div class="docs-content">
+                            <h4>1. Install Promachos</h4>
+                            <div class="code-block">
+                                <code>npm install -g promachos</code>
+                                <button class="copy-btn" onclick="copyToClipboard('npm install -g promachos')">Copy</button>
+                            </div>
+                            
+                            <h4>2. Initialize Your Project</h4>
+                            <div class="code-block">
+                                <code>cd your-project && promachos init --auto</code>
+                                <button class="copy-btn" onclick="copyToClipboard('cd your-project && promachos init --auto')">Copy</button>
+                            </div>
+                            
+                            <h4>3. Start Collaborating</h4>
+                            <div class="code-block">
+                                <code>promachos start --copy</code>
+                                <button class="copy-btn" onclick="copyToClipboard('promachos start --copy')">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Commands -->
+                    <div class="docs-section">
+                        <h3>🔧 Commands</h3>
+                        <div class="docs-content">
+                            <div class="command-list">
+                                <div class="command-item">
+                                    <code>promachos init</code>
+                                    <span>Initialize protocol in current directory</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>promachos start</code>
+                                    <span>Generate collaboration context</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>promachos status</code>
+                                    <span>Check current project status</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>promachos build</code>
+                                    <span>Build protocol state snapshot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Configuration -->
+                    <div class="docs-section">
+                        <h3>⚙️ Configuration</h3>
+                        <div class="docs-content">
+                            <h4>config.yaml Options</h4>
+                            <div class="config-example">
+                                <pre><code>behavior:
+  verbosity: balanced
+  explain_reasoning: true
+  ask_before_execute: false
+  max_retries: 3
+
+collaboration:
+  update_progress: true
+  track_decisions: true
+  require_task_breakdown: true
+
+quality:
+  code_review_level: standard
+  test_requirements: true</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Structure -->
+                    <div class="docs-section">
+                        <h3>📁 File Structure</h3>
+                        <div class="docs-content">
+                            <div class="file-structure">
+                                <div class="file-row">
+                                    <code>.promachos/config.yaml</code>
+                                    <span>AI behavior rules & preferences</span>
+                                </div>
+                                <div class="file-row">
+                                    <code>.promachos/project.md</code>
+                                    <span>Structured project context</span>
+                                </div>
+                                <div class="file-row">
+                                    <code>.promachos/context.md</code>
+                                    <span>Decision history & insights</span>
+                                </div>
+                                <div class="file-row">
+                                    <code>.promachos/progress.json</code>
+                                    <span>Quantified progress metrics</span>
+                                </div>
+                                <div class="file-row">
+                                    <code>.promachos/tasks.json</code>
+                                    <span>Structured task breakdown</span>
+                                </div>
+                                <div class="file-row">
+                                    <code>.promachos/artifacts/</code>
+                                    <span>AI-generated outputs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Collaboration -->
+                    <div class="docs-section">
+                        <h3>👥 Team Workflows</h3>
+                        <div class="docs-content">
+                            <h4>Handoff Process</h4>
+                            <ol>
+                                <li><strong>Developer A:</strong> Works with AI, protocol auto-updates</li>
+                                <li><strong>Developer B:</strong> Runs <code>promachos start</code></li>
+                                <li><strong>AI Assistant:</strong> Receives full context automatically</li>
+                                <li><strong>Seamless Continuation:</strong> No information loss</li>
+                            </ol>
+                            
+                            <h4>Best Practices</h4>
+                            <ul>
+                                <li>Always run <code>promachos start</code> when taking over work</li>
+                                <li>Let AI update protocol files after significant changes</li>
+                                <li>Use <code>promachos status</code> for team standups</li>
+                                <li>Maintain consistent collaboration standards</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- AI Integration -->
+                    <div class="docs-section">
+                        <h3>🤖 AI Assistant Integration</h3>
+                        <div class="docs-content">
+                            <h4>Supported AI Tools</h4>
+                            <div class="ai-tools">
+                                <div class="ai-tool">
+                                    <strong>Claude Code</strong> → <code>CLAUDE.md</code>
+                                </div>
+                                <div class="ai-tool">
+                                    <strong>GitHub Copilot</strong> → <code>COPILOT.md</code>
+                                </div>
+                                <div class="ai-tool">
+                                    <strong>Cursor</strong> → <code>CURSOR.md</code>
+                                </div>
+                                <div class="ai-tool">
+                                    <strong>ChatGPT</strong> → <code>CHATGPT.md</code>
+                                </div>
+                            </div>
+                            
+                            <h4>How It Works</h4>
+                            <ol>
+                                <li>AI automatically detects protocol instructions</li>
+                                <li>Follows standardized collaboration rules</li>
+                                <li>Updates progress and context files</li>
+                                <li>Maintains consistent behavior across sessions</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Troubleshooting -->
+                    <div class="docs-section">
+                        <h3>🔍 Troubleshooting</h3>
+                        <div class="docs-content">
+                            <h4>Common Issues</h4>
+                            <div class="troubleshoot-item">
+                                <strong>Protocol not detected by AI</strong>
+                                <p>Ensure the AI instruction file (e.g., CURSOR.md) exists in your project root</p>
+                            </div>
+                            <div class="troubleshoot-item">
+                                <strong>Context not updating</strong>
+                                <p>Check that config.yaml has <code>update_progress: true</code> and <code>track_decisions: true</code></p>
+                            </div>
+                            <div class="troubleshoot-item">
+                                <strong>Installation issues</strong>
+                                <p>Try <code>npm install -g promachos --force</code> or check Node.js version compatibility</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="docs-footer">
+                    <h3>Need More Help?</h3>
+                    <div class="help-links">
+                        <a href="https://github.com/ramigb/promachos/issues" target="_blank" class="help-link">
+                            <span>🐛</span>
+                            <div>
+                                <strong>Report Issues</strong>
+                                <small>Found a bug? Let us know</small>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ramigb/promachos/discussions" target="_blank" class="help-link">
+                            <span>💬</span>
+                            <div>
+                                <strong>Discussions</strong>
+                                <small>Ask questions & share ideas</small>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ramigb/promachos/blob/main/CONTRIBUTING.md" target="_blank" class="help-link">
+                            <span>🤝</span>
+                            <div>
+                                <strong>Contributing</strong>
+                                <small>Help improve the protocol</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your AI Collaboration?</h2>
+                    <p>Join teams already using Promachos Protocol for consistent, trackable, and scalable human-AI collaboration.</p>
+                    <div class="cta-actions">
+                        <a href="https://github.com/ramigb/promachos" target="_blank" class="btn btn-primary">Get Started Now</a>
+                        <a href="#docs" class="btn btn-outline">Read Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Promachos</h3>
+                    <p>Making AI collaboration predictable, trackable, and scalable.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/ramigb/promachos">GitHub Repository</a>
+                    <a href="https://github.com/ramigb/promachos/blob/main/README.md">Documentation</a>
+                    <a href="https://github.com/ramigb/promachos/issues">Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="https://github.com/ramigb/promachos/discussions">Discussions</a>
+                    <a href="https://github.com/ramigb/promachos/blob/main/CONTRIBUTING.md">Contributing</a>
+                    <a href="https://github.com/ramigb/promachos/blob/main/LICENSE">License</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Promachos Protocol. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

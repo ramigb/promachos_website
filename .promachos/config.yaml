@@ -1,0 +1,23 @@
+project:
+  name: Promachos
+  type: web-app
+  language: english
+  metadata:
+    files: 0
+    lines: 0
+    languages: []
+  ai_assistant: cursor
+behavior:
+  verbosity: minimal
+  explain_reasoning: true
+  ask_before_execute: false
+  max_retries: 3
+output:
+  format: markdown
+  save_artifacts: true
+  include_metrics: true
+cli:
+  auto_copy_clipboard: false
+  auto_open_browser: false
+  show_progress: true
+  colored_output: true
